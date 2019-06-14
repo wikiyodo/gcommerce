@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductWithColorsCard   renders correctly with product 1`] = `
+<div
+  className="card-01-sx card "
+>
+  <div
+    className="card-body"
+  >
+    <div
+      className="card-img"
+    >
+      <img
+        src="https://backendapi.turing.com/images/products/chartres-cathedral-thumbnail.gif"
+      />
+    </div>
+    <div
+      className="card-title"
+    >
+      Chartres Cathedral
+    </div>
+    <div
+      className="card-fo"
+    >
+      <a
+        className="btn  btn-gr btn-pink-red"
+        href="/products/details/2"
+        onClick={[Function]}
+      >
+        Buy now
+      </a>
+    </div>
+  </div>
+</div>
+`;

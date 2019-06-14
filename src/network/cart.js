@@ -12,7 +12,7 @@ import App from "../App";
 
 
 export const GET_GENERATE_CART_ID = (parameter, urlParam, callback) =>  {
-    return GET(ParseRoute.local(API_CART_ID_GENERATE, urlParam), parameter).set('USER-KEY',App.getUserToken().token).end(callback);
+    return GET(ParseRoute.local(API_CART_ID_GENERATE, urlParam), parameter).set('USER-KEY',App.getUserToken().token ||'').end(callback);
 };
 
 export const ADD_ITEM_TO_CARD = (parameter, callback) =>  {
@@ -20,7 +20,7 @@ export const ADD_ITEM_TO_CARD = (parameter, callback) =>  {
 };
 
 export const GET_CART_ITEMS = (parameter, callback) =>  {
-    return GET(ParseRoute.local(API_GET_ITEMS_IN_CART, parameter)).set('USER-KEY',App.getUserToken().token).end(callback);
+    return GET(ParseRoute.local(API_GET_ITEMS_IN_CART, parameter)).set('USER-KEY',App.getUserToken().token||'').end(callback);
 };
 
 export const UPDATE_CART_ITEM = (parameter, payload, callback) =>  {
