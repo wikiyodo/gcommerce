@@ -1,0 +1,8 @@
+.product-colors {
+  display: flex;
+  flex-direction: row; }
+  .product-colors .pc-each {
+    width: 24px;
+    height: 24px; }
+
+/*# sourceMappingURL=filter.css.map */

@@ -1,0 +1,21 @@
+$default-font-stack: 'Roboto', sans-serif;
+$primary-color: #f62f5e;
+$red-pink-color: #f62f5e;
+$white-color: #FFFFFF;
+$sky-blue-color: #6eb2fb;
+$black: #2e2e2e;
+$greyish-black: #efefef;
+$greyish: #595959;
+body{
+  background-color: #f7f7f7;
+}
+*{
+  font-family: $default-font-stack;
+}
+
+.boxed-body{
+  padding:{
+    left: 30px;
+    right: 30px;
+  }
+}

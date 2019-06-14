@@ -1,0 +1,39 @@
+.hm-banner-01{
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .inner-wrapper{
+    background-color: rgba(33,33,33,0.5);
+
+    padding:{
+      top: 80px;
+      bottom: 67px;
+    }
+    .title-wrapper{
+      *{
+        color: $white-color;
+      }
+      margin-bottom: 15px;
+    }
+
+    .categories-wrapper{
+      ul.category-listings{
+        padding:{
+          left: 0;
+          top: 16px;
+        }
+        li{
+          font-size: 16px;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.5;
+          color: $white-color;
+          list-style: none;
+          padding:{
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+}

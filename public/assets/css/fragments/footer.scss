@@ -1,0 +1,218 @@
+footer{
+  .footer-wrapper{
+    background-color: $black;
+    .footer-inner{
+      padding:{
+        top: 50px;
+        bottom: 50px;
+        left: 10px;
+        right: 10px;
+      }
+
+
+      .fi-links{
+        ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          li{
+            //display: inline-block;
+            padding-left: 20px;
+            list-style: none;
+            letter-spacing: 1.2px;
+
+            &:first-of-type{
+              padding-left: 0px;
+
+            }
+            color: $white-color;
+            font-weight: bold;
+          }
+        }
+        padding:{
+          bottom: 15px;
+        }
+      }
+      .fi-social{
+        ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          li{
+            //display: inline-block;
+            margin-left: 20px;
+            list-style: none;
+            letter-spacing: 1.2px;
+
+            &:first-of-type{
+              margin-left: 0px;
+            }
+            padding:3px 7px;
+
+            background-color: $white-color;
+            border-radius: 50%;
+            color: $black;
+            font-weight: bold;
+          }
+        }
+        padding:{
+          bottom: 15px;
+        }
+      }
+      .fi-btm{
+        ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          li{
+            //display: inline-block;
+            margin-left: 20px;
+            list-style: none;
+            letter-spacing: 1.2px;
+
+            &:first-of-type{
+              margin-left: 0px;
+            }
+            color: $greyish;
+            font-size: 11px;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.subscrition-01{
+  background-color: #efefef;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:{
+    left: 30px;
+    right: 30px;
+    top: 23px;
+    bottom: 23px;
+
+  }
+
+  .sb-ti{
+    vertical-align: middle;
+    padding:{
+      top: 10px;
+    }
+  }
+  .sub-form{
+    display: flex;
+    flex-direction: row;
+    .ic-msg{
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: -35px;
+      z-index: 3;
+      margin-top: 15px;
+    }
+
+    .email-input{
+      color: #bababa;
+      font-weight: bold;
+      font-size: 14px;
+      padding:{
+        left:60px;
+        right:90px;
+        top: 20px;
+        bottom: 20px;
+
+      }
+    }
+
+    .btn-sub{
+      margin:{
+        left:10px;
+      }
+
+      font-weight: bold;
+      font-size: 14px;
+      padding:{
+        top: 2px;
+        bottom: 2px;
+
+      }
+    }
+  }
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.tbl-md-hg7{
+  thead{
+    tr{
+      border-bottom: solid 1.4px $greyish;
+      color: $greyish;
+      font-weight: 600;
+
+    }
+  }
+
+  .img-tmb{
+    width: 60px;
+    max-height: 80px;
+    border: solid 1px $greyish;
+    padding: 5px;
+
+  }
+
+  .it-sdm2-f{
+    .e-its{
+      font-weight: 600;
+      font-size: 16px;
+      color: $black;
+    }
+    .e-its2{
+      font-weight: 500;
+      font-size: 14px;
+      color: $greyish;
+      margin-top: 10px;
+    }
+    .e-its3{
+      font-weight: 500;
+      font-size: 14px;
+      color: $greyish;
+      margin-top: 10px;
+    }
+  }
+  .it-sdm2-fx{
+    display: flex;
+    flex-direction: row;
+    .e-its{
+      background-color: $greyish-black;
+      border-radius: 50%;
+      padding: 4px 8px;
+
+    }
+
+    .e-its2{
+      input{
+        border: solid 1px $greyish-black;
+        border-radius: 12px;
+        width: 50px;
+        text-align: center;
+      }
+      margin:{
+        left: 5px;
+        right: 5px;
+      }
+    }
+  }
+}
+
+.flex-space-btw{
+  justify-content: space-between;
+}
+
+.vertical-middle{
+  vertical-align: middle !important;
+}

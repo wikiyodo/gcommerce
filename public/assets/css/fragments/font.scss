@@ -1,0 +1,21 @@
+
+.font{
+  &.font-small{
+    font-size: 12px;
+
+  }
+
+  &.font-pink{
+    color: $red-pink-color;
+  }
+  &.font-grey{
+    color: $greyish;
+  }
+  &.font-grey-light{
+    color: #cccccc;
+  }
+  &.font-big-bold{
+    font-size: 15px;
+    font-weight: bold;
+  }
+}

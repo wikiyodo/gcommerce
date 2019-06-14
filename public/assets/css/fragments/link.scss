@@ -1,0 +1,9 @@
+.link{
+  text-decoration: none;
+  &.pink-red{
+    color: $red-pink-color !important;
+  }
+  &.white{
+    color: $white-color !important;
+  }
+}

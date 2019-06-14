@@ -1,0 +1,24 @@
+.selected-options{
+  .so-each{
+    font-size: 11px;
+    .fa-close{
+
+    }
+    .mgl{
+      color: #bbbbbb;
+    }
+    .mgl2{
+      color: #5a5a5a;
+    }
+    padding: {
+      top: 5px;
+      bottom: 5px;
+    };
+  }
+}
+
+.bx-21{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

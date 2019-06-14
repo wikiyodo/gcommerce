@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>GCOMMERCE BESTLOB</title>
+    <link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/css/nouislider.min.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/css/jquery-ui.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/css/style.css" type="text/css" rel="stylesheet" />
+    <script src="https://js.stripe.com/v3/"></script>
+
     <meta name="theme-color" content="#000000" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -22,7 +27,41 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <style>
+      #card-element{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+      }
+    .StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+</style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -37,5 +76,23 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="/assets/js/jquery-1.12.4.js" type="application/javascript"></script>
+    <script src="/assets/js/jquery-ui.js" type="application/javascript"></script>
+    <script src="/assets/js/bootstrap.min.js" type="application/javascript"></script>
+    <script>
+        $( function() {
+            $( "#ex12b" ).slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [ 75, 300 ],
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+                }
+            });
+            $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+                " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+    </script>
   </body>
 </html>

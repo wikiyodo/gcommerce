@@ -1,0 +1,89 @@
+.breadcrumb-gr{
+  background-color: transparent;
+  padding-left: 0;
+  .breadcrumb-item{
+    color: $greyish;
+  }
+}
+
+.ratings{
+  color: #ebc700;
+
+  .inactive{
+    color: $greyish-black;
+  }
+}
+
+.card-title-dr{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.space-top-tiny{
+  margin-top: 15px;
+}
+.space-left-average{
+  margin-left: 30px;
+
+}
+.space-bottom-average{
+  margin-bottom: 30px;
+}
+
+.space-average-h{
+  height: 30px;
+}
+
+
+.steps-dp{
+  .str-line{
+    display: flex;
+    flex-direction: row;
+    .ln{
+      height: 5px;
+      width: 100%;
+      background-color: $greyish-black;
+      &.active{
+        background-color: $red-pink-color;
+      }
+    }
+  }
+  .str-circ{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -10px;
+    .ln{
+      height: 14px;
+      width: 14px;
+      border-radius: 100%;
+      background-color: $red-pink-color;
+      border: solid 2px $white-color;
+    }
+  }
+  .str-label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    .ln{
+      color: $greyish;
+      font-weight: bold;
+      &.active{
+        color: $red-pink-color;
+      }
+    }
+  }
+}
+
+.flex{
+  display: flex;
+}
+
+.padding-cs-43{
+  padding: 10px 35px;
+}
+
+.img-res{
+  max-width: 100%;
+}

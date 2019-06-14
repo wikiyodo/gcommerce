@@ -1,0 +1,130 @@
+.filters-01{
+  .each-filter{
+    margin:{
+      bottom: 20px;
+    }
+    .ef-title{
+      margin:{
+        bottom: 20px;
+      }
+      color:$greyish;
+
+    }
+
+  }
+}
+
+.product-colors{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &.compact{
+    justify-content: center;
+
+  }
+  &.compact-left{
+    justify-content: flex-start;
+
+  }
+  .pc-each{
+
+    border-radius: 50%;
+    &.active {
+      border: solid 1px #cccccc;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+    &:hover {
+      border: solid 1px #cccccc;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+
+    padding: 3px;
+    .pce-s{
+      width: 24px;
+      height: 24px;
+      background-color: $sky-blue-color;
+      border-radius: 50%;
+      writing-mode: horizontal-tb;
+
+    }
+    margin:{
+      bottom: 5px;
+    }
+  }
+}
+
+
+.product-sizes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &.compact{
+    justify-content: center;
+
+  }
+  &.compact-left{
+    justify-content: flex-start;
+    .ps-each{
+      margin:{
+        left: 3px;
+        right: 3px;
+      }
+    }
+  }
+  .ps-each{
+    background-color: #efefef;
+    width: 55px;
+    padding:{
+      bottom: 5px;
+      top: 5px;
+    }
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    color: $greyish;
+
+    &.active{
+      background-color: $red-pink-color;
+      color: $white-color;
+    }
+  }
+}
+
+.ui-slider-handle{
+  background-color: $primary-color !important;
+  border-radius: 50%;
+  border: solid 1px $white-color !important;
+  top: -0.2em !important;
+}
+
+
+.ui-slider-range{
+  background-color: $primary-color !important;
+}
+
+.ui-slider{
+  background-color: #efefef !important;
+  border:none !important;
+  padding-top: 4px;
+}
+
+.range-slider-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:{
+    top: 10px;
+    bottom: 10px;
+  }
+  .min-sk3{
+    color: $greyish;
+  }
+  .max-sk3{
+    color: $greyish;
+  }
+}

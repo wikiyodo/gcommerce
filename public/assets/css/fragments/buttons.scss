@@ -1,0 +1,29 @@
+.btn-gr{
+  &.btn-pink-red{
+    border-radius: 24px;
+    background-color: $red-pink-color;
+    padding:{
+      left: 25px;
+      right: 25px;
+    }
+    color: $white-color;
+    font-size: 12px;
+  }
+  &.btn-white{
+    border-radius: 24px;
+    color: $red-pink-color;
+    padding:{
+      left: 25px;
+      right: 25px;
+    }
+    background-color: $white-color;
+    font-size: 12px;
+  }
+  &.no-border{
+    border: none;
+  }
+}
+
+.modal-footer{
+  background-color: $greyish;
+}
