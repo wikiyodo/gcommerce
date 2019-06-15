@@ -18,7 +18,7 @@ Gcommerce allows you to perform basic E-commerce functionality such as;
 Gcommerce communicactes with an API endpoints from `backendapi.turing.com`
 
 ## HOSTING
-Gcommerce is hosted on a server that can be accessed via [18.188.68.210:3003](http://18.188.68.210:4000);
+Gcommerce is hosted on a server that can be accessed via [https://18.188.68.210:8443](https://18.188.68.210:8443); or [http://18.188.68.210:4000](http://18.188.68.210:4000);
 
 ## Single Page App
 Gcommerce is a [single page app](https://msdn.microsoft.com/en-us/magazine/dn463786.aspx). 
